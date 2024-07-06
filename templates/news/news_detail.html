@@ -1,0 +1,10 @@
+{% extends 'news/base.html' %}
+{% load static %}
+
+{% block title %}{{ news.title }} {% endblock %}
+
+{% block content %}
+    <h2>{{ news.title }}</h2>
+    <p>{{ news.body }}</p>
+    <img src="{{ news.image.url }}" alt="Bu yerda yangilikka aloqador rasm bor edi">
+{% endblock %}
